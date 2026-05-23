@@ -1,0 +1,12 @@
+# Core
+python-dotenv>=1.0.0      # load secrets from .env
+requests>=2.31.0          # HTTP calls
+
+# Chatbot (Fase 1)
+anthropic>=0.40.0         # Claude API — cerebro del chatbot
+
+# Add per-tool dependencies below as workflows require them, e.g.:
+# google-api-python-client>=2.0.0
+# google-auth-oauthlib>=1.2.0
+# beautifulsoup4>=4.12.0
+# pandas>=2.0.0
