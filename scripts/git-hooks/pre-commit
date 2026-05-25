@@ -1,0 +1,18 @@
+#!/bin/sh
+# Hook pre-commit: recalcula el avance del proyecto antes de cada commit.
+# Corre tools/progress.py (que reescribe el bloque de avance en PROJECT_PLAN.md) y
+# vuelve a agregar el archivo para que el avance actualizado entre en el commit.
+#
+# Instalación (una sola vez, o tras clonar el repo):
+#   cp scripts/git-hooks/pre-commit .git/hooks/pre-commit
+#   chmod +x .git/hooks/pre-commit
+#
+# Nunca bloquea el commit: si Python no está disponible, simplemente no actualiza.
+
+if command -v python >/dev/null 2>&1; then
+  python tools/progress.py >/dev/null 2>&1 && git add PROJECT_PLAN.md
+elif command -v python3 >/dev/null 2>&1; then
+  python3 tools/progress.py >/dev/null 2>&1 && git add PROJECT_PLAN.md
+fi
+
+exit 0
