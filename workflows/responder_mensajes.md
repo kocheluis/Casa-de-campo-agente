@@ -12,7 +12,8 @@ de la base de conocimiento). Es la Fase 1 del proyecto.
 - `mensaje` — texto del cliente.
 - `history` — turnos previos de la conversación (opcional).
 - Credenciales en `.env`: `ANTHROPIC_API_KEY`, `META_ACCESS_TOKEN`,
-  `META_PHONE_NUMBER_ID`, `DB_API_URL`, `DB_API_TOKEN`, `OWNER_WHATSAPP`.
+  `META_PHONE_NUMBER_ID`, `DB_API_URL`, `DB_API_TOKEN`, `OWNER_WHATSAPP`,
+  `CHATWOOT_BASE_URL`, `CHATWOOT_API_TOKEN`, `CHATWOOT_ACCOUNT_ID`.
 - Base de conocimiento completa en `knowledge/casa_de_campo.md`.
 
 ## Tools
@@ -25,19 +26,24 @@ de la base de conocimiento). Es la Fase 1 del proyecto.
    `create_tentative_reservation(...)`.
 
 ## Steps
-1. Recibir el evento del webhook de Meta (vía n8n en producción) con canal, identificador
-   y mensaje del cliente.
+1. El mensaje entra por las APIs de Meta a **Chatwoot** (bandeja); Chatwoot dispara un
+   webhook a **n8n** con canal, identificador y mensaje del cliente.
 2. `find_or_create_client` → registrar/recuperar el cliente en la tabla `Clientes`.
 3. `generate_reply(mensaje, history)` → obtener `reply` y `handoff`.
-4. Enviar `reply` por el canal correspondiente (`send_whatsapp` o `send_messenger`).
-5. Si `handoff` es verdadero → `notify_owner` con un resumen y marcar la conversación.
+4. Devolver `reply` a la conversación correcta en **Chatwoot** (que la envía por el canal).
+   *(Los tools `send_whatsapp`/`send_messenger` quedan para envíos directos sin Chatwoot,
+   p. ej. avisos al dueño o campañas.)*
+5. Si `handoff` es verdadero → marcar la conversación en Chatwoot para que el dueño la
+   retome, y `notify_owner` con un resumen.
 6. Si el cliente pidió fechas concretas → `create_tentative_reservation` (estado tentativa).
 7. `log_conversation` → guardar mensaje, respuesta y si requirió intervención humana.
 
 ## Arquitectura en producción
-- En producción, **n8n** (en el VPS) escucha el webhook de Meta 24/7 y ejecuta estos
-  pasos llamando a los tools. Este workflow documenta la lógica; n8n la orquesta.
-- La base de datos (NocoDB/Baserow) y n8n viven en el mismo VPS.
+- **Chatwoot** (en el VPS) es la bandeja omnicanal: unifica WhatsApp+IG+FB, guarda
+  historial y permite el **handoff humano** (el dueño retoma conversaciones delicadas).
+- **n8n** (en el VPS) recibe el webhook de Chatwoot 24/7 y ejecuta estos pasos llamando a
+  los tools. Este workflow documenta la lógica; n8n la orquesta.
+- La base de datos (**NocoDB**), Chatwoot y n8n viven en el mismo VPS (≥4-8 GB RAM).
 
 ## Output
 - Mensaje enviado al cliente por su canal.

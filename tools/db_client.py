@@ -1,8 +1,12 @@
-"""Cliente para la base de datos autoalojada (NocoDB o Baserow).
+"""Cliente para la base de datos autoalojada (NocoDB — elección del proyecto).
 
 Es la única fuente de verdad del negocio: Clientes, Reservas, Inventario,
 Conversaciones. Expone operaciones CRUD genéricas y helpers de alto nivel que usa el
 chatbot. Reutiliza la configuración del framework (`config.env`).
+
+Se eligió NocoDB sobre Baserow (ver research/02-base-de-datos.md): NocoDB ofrece la
+vista Calendario gratis en self-hosted (en Baserow es de pago) y API REST con tokens.
+Aun así el cliente soporta ambos vía DB_TYPE por si se decide migrar.
 
 Configura en `.env`:
     DB_API_URL   -> URL base de la API de la tabla (ver .env.example)
