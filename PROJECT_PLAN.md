@@ -11,9 +11,18 @@
 - **Presupuesto:** ~$70/mes en herramientas.
 - **Repo:** github.com/kocheluis/Casa-de-campo-agente (privado).
 
+## Modo de trabajo
+- **Probar en local antes del VPS:** todo el stack (Chatwoot + n8n + NocoDB) se valida
+  primero en **Docker Desktop** (PC), y solo cuando funciona se replica al VPS. Esto
+  reduce el riesgo de fallar en producción al primer intento. Archivos:
+  `deploy/docker-compose.local.yml` (modo local) y `deploy/README.md` (sección de prueba
+  local). Lo único que no se prueba en local son los webhooks de Meta (se usa un túnel
+  temporal o ya el VPS).
+- **El diseño de datos** está en `docs/modelo-datos.md` (tablas, tipos y relaciones).
+
 ## Avance actual
 <!-- PROGRESS:START -->
-**Última actualización:** 2026-05-26 01:57
+**Última actualización:** 2026-05-26 02:02
 
 **Avance global: 7%**  `#-------------------`  (15/219 h)
 
