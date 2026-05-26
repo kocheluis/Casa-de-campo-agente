@@ -13,13 +13,13 @@
 
 ## Avance actual
 <!-- PROGRESS:START -->
-**Última actualización:** 2026-05-25 00:15
+**Última actualización:** 2026-05-26 01:26
 
-**Avance global: 0%**  `--------------------`  (0/213 h)
+**Avance global: 7%**  `#-------------------`  (15/213 h)
 
 | Fase | Avance | Tareas | Horas |
 |---|---|---|---|
-| Ramp-up Python | 0% `------------` | 0/3 | 0/15 |
+| Ramp-up Python | 100% `############` | 3/3 | 15/15 |
 | Fase 0 — Cimientos | 0% `------------` | 0/8 | 0/52 |
 | Fase 1 — Chatbot multicanal | 0% `------------` | 0/6 | 0/52 |
 | Fase 2 — CRM + Calendario + Inventario | 0% `------------` | 0/4 | 0/28 |
@@ -83,9 +83,9 @@ gantt
 
 <!-- TASKS:START -->
 ### Ramp-up Python
-- [ ] Fundamentos de Python: sintaxis vs C/Java, tipos, listas y diccionarios (6h)
-- [ ] Entorno: venv, pip, ejecutar scripts, `requirements.txt` (3h)
-- [ ] Librería `requests` + leer y entender los tools del proyecto (6h)
+- [X] Fundamentos de Python: sintaxis vs C/Java, tipos, listas y diccionarios (6h)
+- [X] Entorno: venv, pip, ejecutar scripts, `requirements.txt` (3h)
+- [X] Librería `requests` + leer y entender los tools del proyecto (6h)
 
 ### Fase 0 — Cimientos
 - [ ] Iniciar verificación de Meta Business con el RUC (correr en segundo plano) (8h)
