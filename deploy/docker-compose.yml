@@ -11,8 +11,11 @@
 
 services:
   # --- Reverse proxy con HTTPS automático (Let's Encrypt) ---------------------
+  # Está en el profile "proxy": SOLO se levanta en el VPS con --profile proxy.
+  # En local se omite (se accede por localhost:puerto, ver docker-compose.local.yml).
   caddy:
     image: caddy:2
+    profiles: ["proxy"]
     restart: unless-stopped
     ports:
       - "80:80"

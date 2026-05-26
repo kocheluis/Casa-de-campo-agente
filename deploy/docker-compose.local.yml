@@ -1,0 +1,38 @@
+# Override para PROBAR EN LOCAL (Docker Desktop en tu PC), sin Caddy ni HTTPS.
+# Publica los puertos en localhost y usa URLs http://localhost.
+#
+# Levantar en local (Caddy NO se incluye porque está en el profile "proxy"):
+#   docker compose -f docker-compose.yml -f docker-compose.local.yml up -d
+#
+# Acceder en el navegador:
+#   NocoDB   -> http://localhost:8080
+#   n8n      -> http://localhost:5678
+#   Chatwoot -> http://localhost:3000
+#
+# Detener:
+#   docker compose -f docker-compose.yml -f docker-compose.local.yml down
+
+services:
+  nocodb:
+    ports:
+      - "8080:8080"
+    environment:
+      NC_PUBLIC_URL: "http://localhost:8080"
+
+  n8n:
+    ports:
+      - "5678:5678"
+    environment:
+      N8N_HOST: localhost
+      N8N_PROTOCOL: http
+      WEBHOOK_URL: "http://localhost:5678/"
+
+  chatwoot-rails:
+    ports:
+      - "3000:3000"
+    environment:
+      FRONTEND_URL: "http://localhost:3000"
+
+  chatwoot-sidekiq:
+    environment:
+      FRONTEND_URL: "http://localhost:3000"

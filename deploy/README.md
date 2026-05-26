@@ -6,6 +6,37 @@ Levanta en un VPS: **Caddy** (HTTPS) + **PostgreSQL** + **Redis** + **NocoDB** +
 > Plantilla de arranque. Si algo falla en el primer arranque (sobre todo Chatwoot),
 > lo ajustamos juntos viendo los logs.
 
+---
+
+## ⚡ Recomendado: probar PRIMERO en tu PC (local)
+
+Antes de tocar el VPS, valida que todo levante en tu PC con **Docker Desktop**. Lo que
+funcione en local funcionará casi igual en el VPS.
+
+1. Instala **Docker Desktop** (Windows, con WSL2) y ábrelo.
+2. En la carpeta `deploy/`, crea el `.env` (igual que el paso 2 de abajo).
+3. Levanta en modo local (sin Caddy/HTTPS, por `localhost`):
+   ```bash
+   docker compose -f docker-compose.yml -f docker-compose.local.yml up -d
+   docker compose -f docker-compose.yml -f docker-compose.local.yml logs -f
+   ```
+4. Abre en el navegador y crea las cuentas:
+   - NocoDB → http://localhost:8080
+   - n8n → http://localhost:5678
+   - Chatwoot → http://localhost:3000
+5. Detener: `docker compose -f docker-compose.yml -f docker-compose.local.yml down`
+
+**Qué se prueba en local:** que los servicios levanten y se comuniquen, crear cuentas,
+modelar tablas en NocoDB y construir el workflow de n8n. **Lo único que NO** se puede
+probar en local son los **webhooks de Meta** (localhost no es público); para eso, en su
+momento, se usa un túnel temporal (ngrok / cloudflared) o ya directamente el VPS.
+
+Requisito de RAM: levantar todo a la vez consume bastante; ten varios GB libres.
+
+---
+
+## Despliegue en el VPS (producción)
+
 ## Requisitos previos
 - [ ] **VPS** con Ubuntu 24.04, **≥4 GB RAM (ideal 8 GB)**, con Docker instalado
   (ver [../docs/fase-0-cimientos.md](../docs/fase-0-cimientos.md), Parte B).
@@ -37,9 +68,9 @@ Levanta en un VPS: **Caddy** (HTTPS) + **PostgreSQL** + **Redis** + **NocoDB** +
    chmod +x init-db.sh
    ```
 
-4. **Levantar todo:**
+4. **Levantar todo** (en el VPS sí incluimos Caddy con el profile `proxy`):
    ```bash
-   docker compose up -d
+   docker compose --profile proxy up -d
    ```
    La primera vez tarda (descarga imágenes y Chatwoot prepara su base de datos).
    Sigue el avance con:
@@ -64,7 +95,7 @@ Levanta en un VPS: **Caddy** (HTTPS) + **PostgreSQL** + **Redis** + **NocoDB** +
 | Ver logs de un servicio | `docker compose logs -f chatwoot-rails` |
 | Reiniciar un servicio | `docker compose restart n8n` |
 | Detener todo (datos a salvo) | `docker compose down` |
-| Actualizar imágenes | `docker compose pull && docker compose up -d` |
+| Actualizar imágenes (VPS) | `docker compose --profile proxy pull && docker compose --profile proxy up -d` |
 
 ## Backups (Fase 0 — no opcional)
 Respaldo diario del PostgreSQL (ajusta y ponlo en un `cron`):

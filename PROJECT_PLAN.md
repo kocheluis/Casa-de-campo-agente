@@ -7,20 +7,20 @@
 ## Resumen
 - **Ejecutor:** 1 persona (ingeniero electrónico; C/Java + MySQL; aprendiendo Python).
 - **Dedicación:** 20 h/semana.
-- **Inicio:** 2026-05-25 · **Lanzamiento objetivo:** 2026-08-16 (~12 semanas, ~213 h).
+- **Inicio:** 2026-05-25 · **Lanzamiento objetivo:** 2026-08-16 (~12 semanas, ~219 h).
 - **Presupuesto:** ~$70/mes en herramientas.
 - **Repo:** github.com/kocheluis/Casa-de-campo-agente (privado).
 
 ## Avance actual
 <!-- PROGRESS:START -->
-**Última actualización:** 2026-05-26 01:48
+**Última actualización:** 2026-05-26 01:57
 
-**Avance global: 7%**  `#-------------------`  (15/213 h)
+**Avance global: 7%**  `#-------------------`  (15/219 h)
 
 | Fase | Avance | Tareas | Horas |
 |---|---|---|---|
 | Ramp-up Python | 100% `############` | 3/3 | 15/15 |
-| Fase 0 — Cimientos | 0% `------------` | 0/8 | 0/52 |
+| Fase 0 — Cimientos | 0% `------------` | 0/9 | 0/58 |
 | Fase 1 — Chatbot multicanal | 0% `------------` | 0/6 | 0/52 |
 | Fase 2 — CRM + Calendario + Inventario | 0% `------------` | 0/4 | 0/28 |
 | Fase 3 — Generación y publicación de video | 0% `------------` | 0/4 | 0/33 |
@@ -50,7 +50,8 @@ gantt
     Ramp-up Python             :py, 2026-05-25, 14d
     section Fase 0 Cimientos
     Verificacion Meta (espera) :crit, 2026-05-25, 14d
-    VPS + Docker + HTTPS       :2026-05-25, 10d
+    Prueba local (Docker Desktop) :2026-05-25, 4d
+    VPS + Docker + HTTPS       :2026-05-29, 10d
     Desplegar NocoDB/n8n/Chatwoot :2026-06-04, 8d
     Backups + conectar canales :2026-06-10, 5d
     M0 Infraestructura         :milestone, 2026-06-14, 0d
@@ -89,6 +90,7 @@ gantt
 
 ### Fase 0 — Cimientos
 - [ ] Iniciar verificación de Meta Business con el RUC (correr en segundo plano) (8h)
+- [ ] Instalar Docker Desktop y probar el stack completo en local antes del VPS (6h)
 - [ ] Contratar VPS (8 GB) + instalar Docker + firewall (8h)
 - [ ] Dominio + 3 subdominios + HTTPS (Caddy/Nginx Proxy Manager) (6h)
 - [ ] Desplegar NocoDB + PostgreSQL (6h)
