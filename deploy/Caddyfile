@@ -1,0 +1,17 @@
+# Caddy enruta cada subdominio al servicio interno y saca HTTPS automático
+# (Let's Encrypt) para los 3. La variable {$DOMAIN} viene del .env.
+#
+# Requisito: en tu DNS, los 3 subdominios deben apuntar (registro A) a la IP del VPS:
+#   chat.TUDOMINIO  n8n.TUDOMINIO  db.TUDOMINIO
+
+chat.{$DOMAIN} {
+	reverse_proxy chatwoot-rails:3000
+}
+
+n8n.{$DOMAIN} {
+	reverse_proxy n8n:5678
+}
+
+db.{$DOMAIN} {
+	reverse_proxy nocodb:8080
+}
