@@ -62,6 +62,9 @@ services:
     environment:
       NC_DB: "pg://postgres:5432?u=${POSTGRES_USER}&p=${POSTGRES_PASSWORD}&d=nocodb"
       NC_PUBLIC_URL: "https://db.${DOMAIN}"
+      # Promueve a este usuario a super admin al arrancar (rol org-level-creator).
+      NC_ADMIN_EMAIL: ${NC_ADMIN_EMAIL:-admin@casadecampo.local}
+      NC_ADMIN_PASSWORD: ${NC_ADMIN_PASSWORD:-CasaDeCampo2026!}
     depends_on:
       postgres:
         condition: service_healthy

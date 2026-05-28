@@ -22,16 +22,16 @@
 
 ## Avance actual
 <!-- PROGRESS:START -->
-**Última actualización:** 2026-05-28 00:40
+**Última actualización:** 2026-05-28 01:22
 
-**Avance global: 10%**  `##------------------`  (21/219 h)
+**Avance global: 12%**  `##------------------`  (27/219 h)
 
 | Fase | Avance | Tareas | Horas |
 |---|---|---|---|
 | Ramp-up Python | 100% `############` | 3/3 | 15/15 |
 | Fase 0 — Cimientos | 10% `#-----------` | 1/9 | 6/58 |
 | Fase 1 — Chatbot multicanal | 0% `------------` | 0/6 | 0/52 |
-| Fase 2 — CRM + Calendario + Inventario | 0% `------------` | 0/4 | 0/28 |
+| Fase 2 — CRM + Calendario + Inventario | 21% `###---------` | 1/4 | 6/28 |
 | Fase 3 — Generación y publicación de video | 0% `------------` | 0/4 | 0/33 |
 | Fase 4 — Campañas con la base de clientes | 0% `------------` | 0/3 | 0/18 |
 | Fase 5 — Cierre y lanzamiento | 0% `------------` | 0/3 | 0/15 |
@@ -117,7 +117,7 @@ gantt
 - [ ] Pruebas end-to-end y ajuste de tono (8h)
 
 ### Fase 2 — CRM + Calendario + Inventario
-- [ ] Modelar tablas en NocoDB (Clientes, Reservas, Inventario, Conversaciones) (6h)
+- [x] Modelar tablas en NocoDB (Clientes, Reservas, Inventario, Conversaciones) (6h)
 - [ ] Vistas Calendario/Grid + Dashboard del dueño (8h)
 - [ ] Formulario de inventario (móvil/PWA) + vista faltante/averiado (6h)
 - [ ] Automatizaciones n8n (recordatorios de check-in / averías) (8h)
