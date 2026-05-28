@@ -52,5 +52,5 @@ Falta por agregar (iterable en n8n con clics; el plan ya lo contempla):
   notificando al dueño.
 - **Pre-reserva** cuando el cliente proponga fechas concretas.
 
-La versión Python (`tools/claude_reply.py`, `tools/db_client.py`) ya tiene toda esa
+La versión Python (`tools/ai_reply.py`, `tools/db_client.py`) ya tiene toda esa
 lógica; lo replicaremos en n8n una vez validado el flujo básico.

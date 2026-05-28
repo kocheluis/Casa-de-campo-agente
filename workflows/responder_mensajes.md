@@ -18,7 +18,7 @@ de la base de conocimiento). Es la Fase 1 del proyecto.
 
 ## Tools
 1. `tools/db_client.py` — `find_or_create_client(...)` captura/recupera el lead.
-2. `tools/claude_reply.py` — `generate_reply(mensaje, history)` produce la respuesta y
+2. `tools/ai_reply.py` — `generate_reply(mensaje, history)` produce la respuesta y
    la bandera `handoff`.
 3. `tools/meta_send.py` — `send_whatsapp(...)` / `send_messenger(...)` responde por el
    mismo canal; `notify_owner(...)` avisa al dueño en caso de handoff.
@@ -59,5 +59,5 @@ de la base de conocimiento). Es la Fase 1 del proyecto.
 - **TikTok**: no tiene API oficial de DMs; esos mensajes se atienden manualmente o se
   redirige al cliente a WhatsApp.
 - **Costos**: usar el modelo Haiku + caché de prompt mantiene barata cada respuesta.
-- **Pruebas**: `python tools/claude_reply.py "mensaje"` permite probar el cerebro sin
+- **Pruebas**: `python tools/ai_reply.py "mensaje"` permite probar el cerebro sin
   depender de Meta ni de la base de datos.

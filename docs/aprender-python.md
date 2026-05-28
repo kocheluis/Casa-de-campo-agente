@@ -112,7 +112,7 @@ Recorrido sugerido:
    expresiones regulares (`re`). Es el ejercicio 3 de abajo.
 3. **`tools/db_client.py`** — una **clase** (`class DBClient`), que es como una clase de
    Java pero con `self` en vez de `this`, y el constructor se llama `__init__`.
-4. **`tools/claude_reply.py`** — usa la librería `requests`/SDK para llamar a una API.
+4. **`tools/ai_reply.py`** — usa LiteLLM para llamar al LLM elegido (Claude/OpenAI/Gemini/DeepSeek).
 
 ### `requests` en 30 segundos (llamar a una API)
 ```python

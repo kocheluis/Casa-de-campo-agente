@@ -137,7 +137,7 @@ n8n Docker — https://docs.n8n.io/hosting/ · NocoDB — https://nocodb.com/doc
 - [ ] Datos sensibles cargados en el `.env` del proyecto (nunca en GitHub).
 
 Cuando esto esté listo, pasamos a la **Fase 1**: cargar los workflows en n8n y conectar
-los tools de Python (`claude_reply.py`, `db_client.py`, `meta_send.py`).
+los tools de Python (`ai_reply.py`, `db_client.py`, `meta_send.py`).
 
 ---
 

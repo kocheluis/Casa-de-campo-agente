@@ -22,7 +22,7 @@
 
 ## Avance actual
 <!-- PROGRESS:START -->
-**Última actualización:** 2026-05-28 01:41
+**Última actualización:** 2026-05-28 02:01
 
 **Avance global: 17%**  `###-----------------`  (37/219 h)
 
@@ -109,7 +109,7 @@ gantt
 - [ ] Configurar backups automáticos del PostgreSQL (4h)
 
 ### Fase 1 — Chatbot multicanal
-- [x] Repasar y adaptar tools WAT (claude_reply, db_client, meta_send) (10h)
+- [x] Repasar y adaptar tools WAT (ai_reply, db_client, meta_send) (10h)
 - [ ] Llenar la base de conocimiento con datos reales del dueño (6h)
 - [ ] Crear cuenta de la API de Anthropic + API key + prueba en vivo del cerebro (3h)
 - [ ] Workflow n8n: Chatwoot -> n8n -> Claude -> Chatwoot (15h)
