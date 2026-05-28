@@ -22,15 +22,15 @@
 
 ## Avance actual
 <!-- PROGRESS:START -->
-**Última actualización:** 2026-05-28 01:22
+**Última actualización:** 2026-05-28 01:41
 
-**Avance global: 12%**  `##------------------`  (27/219 h)
+**Avance global: 17%**  `###-----------------`  (37/219 h)
 
 | Fase | Avance | Tareas | Horas |
 |---|---|---|---|
 | Ramp-up Python | 100% `############` | 3/3 | 15/15 |
 | Fase 0 — Cimientos | 10% `#-----------` | 1/9 | 6/58 |
-| Fase 1 — Chatbot multicanal | 0% `------------` | 0/6 | 0/52 |
+| Fase 1 — Chatbot multicanal | 19% `##----------` | 1/6 | 10/52 |
 | Fase 2 — CRM + Calendario + Inventario | 21% `###---------` | 1/4 | 6/28 |
 | Fase 3 — Generación y publicación de video | 0% `------------` | 0/4 | 0/33 |
 | Fase 4 — Campañas con la base de clientes | 0% `------------` | 0/3 | 0/18 |
@@ -109,7 +109,7 @@ gantt
 - [ ] Configurar backups automáticos del PostgreSQL (4h)
 
 ### Fase 1 — Chatbot multicanal
-- [ ] Repasar y adaptar tools WAT (claude_reply, db_client, meta_send) (10h)
+- [x] Repasar y adaptar tools WAT (claude_reply, db_client, meta_send) (10h)
 - [ ] Llenar la base de conocimiento con datos reales del dueño (6h)
 - [ ] Crear cuenta de la API de Anthropic + API key + prueba en vivo del cerebro (3h)
 - [ ] Workflow n8n: Chatwoot -> n8n -> Claude -> Chatwoot (15h)
