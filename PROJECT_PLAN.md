@@ -22,14 +22,14 @@
 
 ## Avance actual
 <!-- PROGRESS:START -->
-**Última actualización:** 2026-05-26 02:02
+**Última actualización:** 2026-05-28 00:40
 
-**Avance global: 7%**  `#-------------------`  (15/219 h)
+**Avance global: 10%**  `##------------------`  (21/219 h)
 
 | Fase | Avance | Tareas | Horas |
 |---|---|---|---|
 | Ramp-up Python | 100% `############` | 3/3 | 15/15 |
-| Fase 0 — Cimientos | 0% `------------` | 0/9 | 0/58 |
+| Fase 0 — Cimientos | 10% `#-----------` | 1/9 | 6/58 |
 | Fase 1 — Chatbot multicanal | 0% `------------` | 0/6 | 0/52 |
 | Fase 2 — CRM + Calendario + Inventario | 0% `------------` | 0/4 | 0/28 |
 | Fase 3 — Generación y publicación de video | 0% `------------` | 0/4 | 0/33 |
@@ -99,7 +99,7 @@ gantt
 
 ### Fase 0 — Cimientos
 - [ ] Iniciar verificación de Meta Business con el RUC (correr en segundo plano) (8h)
-- [ ] Instalar Docker Desktop y probar el stack completo en local antes del VPS (6h)
+- [x] Instalar Docker Desktop y probar el stack completo en local antes del VPS (6h)
 - [ ] Contratar VPS (8 GB) + instalar Docker + firewall (8h)
 - [ ] Dominio + 3 subdominios + HTTPS (Caddy/Nginx Proxy Manager) (6h)
 - [ ] Desplegar NocoDB + PostgreSQL (6h)
