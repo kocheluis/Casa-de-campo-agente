@@ -1,98 +1,87 @@
 # Pendientes con Gerardo — segunda ronda
 
-> Lista limpia de info que falta o quedó ambigua tras la entrevista del 2026-05-29.
+> Lista corregida tras revisar SUNAT y planificar extracción desde redes sociales.
 > Pensada para enviarse en 1-2 mensajes cortos de WhatsApp, no en otra reunión larga.
 > El orden es por **prioridad de desbloqueo del proyecto**.
 
-## 🚨 CRÍTICO — bloquea Fase 0 (Meta Business)
+## ⚠️ RUC — tiene, pero conviene ajustarlo (no urgente, sí recomendable)
 
-1. **RUC.** Gerardo dijo "puedo crearlo". Sin RUC, Meta no nos verifica el negocio y el
-   bot no puede activarse en WhatsApp. Tipo recomendado: **persona natural con
-   negocio**. Trámite online en SUNAT (~30 minutos). **Hacerlo esta semana.**
+Verificado en SUNAT: Gerardo **sí tiene RUC**, pero como **Persona Natural Sin
+Negocio**. Para Meta:
+- **Lo más probable:** sirve para la verificación inicial del negocio.
+- **Camino blindado** (recomendado): que active la actividad económica de hospedaje en
+  SUNAT Virtual (15 min, gratis):
+  - SUNAT Virtual con Clave SOL → *Mis declaraciones y pagos* → *Mi RUC y otros
+    registros* → *Actividades económicas* → agregar **CIIU 5510 – Actividades de
+    alojamiento para estancias cortas**.
+- Esto lo cambia a **Persona Natural Con Negocio** y elimina cualquier fricción con
+  Meta + cumple SUNAT (los ingresos del alquiler son legalmente actividad empresarial).
 
-## 📎 Listas que se comprometió a enviar (mientras antes, mejor)
+## 🔥 LO ÚNICO REALMENTE PENDIENTE DE GERARDO
 
-2. **Lista de utensilios de cocina** (la que ya maneja con la persona de mantenimiento).
-3. **Lista de juegos y áreas** de la casa (todo lo que el huésped puede usar).
-4. **Material audiovisual**: fotos y videos de la casa, exteriores, interior, piscina,
-   parrilla. Sirve para Fase 3 (video automático) y para que la base de conocimiento
-   gane peso.
-5. **5-10 capturas/copias de chats reales** que él haya respondido a clientes —
-   para afinar el tono y los modismos exactos del bot.
+**Capturas o copias de 5-10 chats reales** que él haya respondido a clientes en
+WhatsApp. Es el insumo de **mayor valor** que queda: sin esto, el tono del bot es una
+aproximación; con esto, suena exactamente como Gerardo. **Si pudiera enviar
+screenshots de su WhatsApp Business, perfecto.**
 
-## 🏡 Datos de la propiedad que no quedaron claros
+## 📷 Lo que puedes sacar tú de sus redes sociales (sin molestarlo)
 
-6. **Número de habitaciones** y tipo de camas en cada una.
-7. **Cuántos baños** hay.
-8. **¿Hay wifi?** Velocidad / clave para los huéspedes.
-9. **¿Hay TV con Netflix u otros streaming?**
-10. **Tiempo / referencia desde Lima**: ¿cuánto demora desde el centro? ¿Hay
-    transporte público o solo en carro?
-11. **El aforo de 15 personas: ¿incluye personas pernoctando o solo es para
-    reuniones?** (suelen ser distintos: pueden caber 10 durmiendo y hasta 15 en una
-    reunión, por ejemplo).
+| # | Pendiente | Dónde buscar | Cómo |
+|---|---|---|---|
+| 4 | Material audiovisual (fotos y videos) | Instagram, Facebook, TikTok | Bajar los posts y reels más recientes |
+| 6 | Habitaciones, camas y baños | Captions de Instagram, reels, álbumes de FB | Suele estar en posts "Conoce la casa" o tours |
+| 7 | Wifi / Netflix | Captions, comentarios, FAQs | A veces aparece en "qué incluye" |
+| 8 | Distancia desde Lima | Bio de Instagram, captions, FB Page info | Casi siempre lo mencionan |
+| 9 | Lista de juegos y áreas | Reels de "tour por la casa", álbumes de FB | Aparece en videos del tour |
+| 17 | Email del negocio | Bio de Instagram, sección "Información" de FB Page | Suele estar visible |
+| 18 | URL Facebook Page | Buscar "Gerardus House" en facebook.com | Anota el handle |
+| 19 | URL Instagram Business | Buscar "gerardushouse" o variantes | Anota el handle |
 
-## 💵 Reservas y pagos — faltan detalles
+**Tip:** abre las 3 plataformas, dedica 30 min y bajas casi todo el checklist. Pega lo
+que vayas encontrando en este mismo archivo o me lo pasas por chat y yo lo paso al
+`knowledge/casa_de_campo.md`.
 
-12. **Política de cancelación**: si el cliente paga el 20% y después cancela, ¿se
-    devuelve el adelanto, se mantiene, hay un % no reembolsable, depende de cuántos
-    días antes? El bot necesita saberlo para no escalar siempre.
-13. **Métodos de pago específicos**: ¿qué cuenta bancaria, Yape, Plin? Esto no se
-    mete en el bot (Gerardo lo pasa al cerrar), pero conviene tenerlo claro para
-    armar la plantilla de WhatsApp que él enviará al confirmar.
-14. **Devolución de garantía**: ¿en cuánto tiempo se devuelve la garantía de S/ 300?
-    El día del check-out, en 24 horas, en una semana...
-15. **¿Pide DNI / edad mínima?** Para reservas y check-in.
+## 📋 Lo que sigue siendo pendiente de Gerardo (no urgente, pero conviene confirmar)
 
-## 🚭 Reglas
+Cosas que NO suelen aparecer en redes sociales — para una sola tanda de WhatsApp con
+él más adelante:
 
-16. **Política de fumadores**: ¿se puede fumar dentro de la casa, solo afuera, está
-    totalmente prohibido?
+11. **Aforo de 15 personas: ¿incluye los que duermen o solo es para reuniones?**
+12. **Política de cancelación**: si el cliente paga el 20% y cancela, ¿se devuelve,
+    se mantiene, depende de cuántos días antes?
+13. **Métodos de pago específicos**: ¿qué cuenta bancaria / Yape / Plin? (para que
+    Gerardo arme su plantilla de WhatsApp del cierre).
+14. **Devolución de garantía** (S/ 300): ¿el mismo día del check-out, 24 h, una semana?
+15. **¿Pide DNI / edad mínima** del huésped para confirmar reservas?
+16. **Política de fumadores**: ¿dentro, solo afuera, prohibido total?
+20. **Confirmar que el número actual** de WhatsApp es el que se queda para el
+    negocio y está activo (ya decidido, solo confirmar).
+22. **¿Cuándo planea sacar el chip nuevo personal?** Esto define la fecha de
+    activación del bot (ver `docs/transicion-numero.md`).
 
-## 📲 Datos administrativos para Meta y herramientas (necesarios para Fase 0)
+## 🤔 Otras cosas que conviene resolver en paralelo (no Gerardo-dependientes)
 
-17. **Email del negocio** para crear cuentas en NocoDB, Chatwoot, Anthropic, etc.
-18. **Página de Facebook** del negocio (URL).
-19. **Cuenta de Instagram en modo Business o Creator** (no personal) — URL.
-    Si está en modo personal, se convierte gratis en *Settings → Account → Switch
-    to Professional Account*.
-20. **Confirmación de que el número actual de WhatsApp** sigue activo y va a usarse
-    para el negocio (decisión ya tomada — solo confirmar).
-
-## 🤔 Decisiones por confirmar
-
-21. **¿Dominio del negocio?** Para las URLs del VPS (`chat.tudominio.com`,
-    `n8n.tudominio.com`, `db.tudominio.com`). Si no tiene, sugerimos `gerardushouse.com`
-    o `.pe`. Cuesta ~S/40-60 al año.
-22. **¿Cuándo planea sacar el chip nuevo para personal?** Esto define cuándo
-    activamos formalmente el bot y comenzamos la transición. Ver
-    `docs/transicion-numero.md` para el calendario T-14/T-7/T-3/T-1.
-23. **Campañas a futuro**: Gerardo dijo "probablemente a futuro". Queda registrado
-    como Fase 4 del plan, sin urgencia.
+2. **Lista de utensilios de cocina** — Gerardo la maneja por escrito. Si no la
+   recordamos, pedírsela puntualmente.
+21. **Dominio del negocio**: si no tiene, sugerimos `gerardushouse.com` o `.pe`
+   (~S/40-60/año). Decisión nuestra y de Gerardo.
+23. **Campañas a futuro**: queda como Fase 4 sin urgencia.
 
 ---
 
-## Mensaje sugerido para mandarle a Gerardo (copy/paste)
+## Mensaje sugerido para Gerardo (cuando lleguemos a esa tanda)
 
-> ¡Hola Gerardo! Mientras voy preparando todo, **estos son los puntos sueltos** que
-> me quedaron de la entrevista. Si me los puedes pasar cuando tengas un rato:
+> ¡Hola Gerardo! Dos cositas pequeñas:
 >
-> **Urgente (esta semana):**
-> 1. ¿Cuándo sacas el RUC? Sin eso no podemos activar el WhatsApp del bot.
+> **1) Ajuste en el RUC** (cuando puedas, no es urgente).
+> Vi que tu RUC está como *Persona Natural Sin Negocio*. Para que Meta nos verifique
+> sin trabas y para cumplir SUNAT, conviene que **agregues la actividad de
+> hospedaje** en *SUNAT Virtual → Mis Datos del RUC → Actividades económicas → CIIU
+> 5510*. Son 15 minutos online y gratis.
 >
-> **Las listas que quedamos:**
-> 2. Lista de utensilios de cocina.
-> 3. Lista de juegos y áreas de la casa.
-> 4. Fotos y videos para usar en las publicaciones.
-> 5. Si puedes, **mándame capturas de 5-10 chats** que hayas respondido a clientes
->    (sirve para que el bot suene como tú).
+> **2) Capturas de chats** 📲
+> ¿Me pasas screenshots de 5-10 conversaciones recientes con clientes (las preguntas
+> que te hicieron + tus respuestas)? Es para que el bot suene como tú de verdad, con
+> tus frases y tu tono.
 >
-> **Datos rápidos** (solo respóndeme en una línea cada uno):
-> 6. ¿Cuántas habitaciones y baños tiene la casa?
-> 7. ¿Wifi? ¿Tele con Netflix?
-> 8. ¿Qué pasa con el adelanto si alguien cancela?
-> 9. ¿Permites fumar dentro? ¿Solo afuera? ¿Para nada?
-> 10. Email del negocio + tu Facebook y tu Instagram (en modo profesional, no
->     personal).
->
-> Con eso ya queda redondo. ¡Gracias! 🙌
+> Lo demás de info de la casa lo voy sacando de tu Instagram y Facebook. ¡Gracias!
