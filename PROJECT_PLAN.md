@@ -7,7 +7,7 @@
 ## Resumen
 - **Ejecutor:** 1 persona (ingeniero electrónico; C/Java + MySQL; aprendiendo Python).
 - **Dedicación:** 20 h/semana.
-- **Inicio:** 2026-05-25 · **Lanzamiento objetivo:** 2026-08-16 (~12 semanas, ~219 h).
+- **Inicio:** 2026-05-25 · **Lanzamiento objetivo:** 2026-08-16 (~12 semanas, ~219 h core + 8 h opcionales en Fase 6).
 - **Presupuesto:** ~$70/mes en herramientas.
 - **Repo:** github.com/kocheluis/Casa-de-campo-agente (privado).
 
@@ -22,9 +22,9 @@
 
 ## Avance actual
 <!-- PROGRESS:START -->
-**Última actualización:** 2026-05-29 03:18
+**Última actualización:** 2026-05-29 12:04
 
-**Avance global: 18%**  `####----------------`  (40/219 h)
+**Avance global: 18%**  `####----------------`  (40/227 h)
 
 | Fase | Avance | Tareas | Horas |
 |---|---|---|---|
@@ -35,6 +35,7 @@
 | Fase 3 — Generación y publicación de video | 0% `------------` | 0/4 | 0/33 |
 | Fase 4 — Campañas con la base de clientes | 0% `------------` | 0/3 | 0/18 |
 | Fase 5 — Cierre y lanzamiento | 0% `------------` | 0/3 | 0/15 |
+| Fase 6 — Mejoras opcionales post-lanzamiento | 0% `------------` | 0/1 | 0/8 |
 <!-- PROGRESS:END -->
 
 ## Milestones
@@ -47,6 +48,7 @@
 | **M3** | Generación y publicación de video (fin Fase 3) | 2026-08-02 | ⬜ Pendiente |
 | **M4** | Campañas activas (fin Fase 4) | 2026-08-09 | ⬜ Pendiente |
 | **M5** | Lanzamiento final + documentación (fin Fase 5) | 2026-08-16 | ⬜ Pendiente |
+| **M6** | *(Opcional)* Mejoras post-lanzamiento — transcripción de voz | 2026-08-24 | ⬜ Pendiente |
 
 ## Cronograma (Gantt)
 
@@ -84,6 +86,9 @@ gantt
     section Fase 5 Cierre
     Pruebas, docs y lanzamiento :2026-08-10, 7d
     M5 Lanzamiento             :milestone, 2026-08-16, 0d
+    section Fase 6 (Opcional) Mejoras
+    Transcripcion de voz (Groq Whisper) :2026-08-17, 7d
+    M6 Mejoras opcionales      :milestone, 2026-08-24, 0d
 ```
 
 ## Desglose de tareas
@@ -137,6 +142,9 @@ gantt
 - [ ] Pruebas integrales y corrección de bugs (8h)
 - [ ] Documentación de operación para el dueño (4h)
 - [ ] Lanzamiento en producción y monitoreo inicial (3h)
+
+### Fase 6 — Mejoras opcionales post-lanzamiento
+- [ ] Transcripción de notas de voz entrantes con Groq Whisper API (gratis 25 h/día) (8h)
 <!-- TASKS:END -->
 
 ## Registro de riesgos
