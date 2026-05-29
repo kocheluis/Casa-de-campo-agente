@@ -49,6 +49,17 @@ Every failure is a chance to make the system stronger:
 
 This loop is how the framework improves over time.
 
+## Error checklist (mandatory)
+
+`docs/errores-resueltos.md` is a living log of every error we've fixed in this project.
+
+- **Before any code change**: scan the index in `docs/errores-resueltos.md` and review
+  the entries for the components you're about to modify. Apply the "check preventivo" of
+  each relevant entry so we don't repeat the same mistake.
+- **After fixing any new error**: add a new entry at the bottom using the template at
+  the end of the file (síntoma → causa raíz → fix → check preventivo → archivos).
+- Never delete past entries; they teach the system over time.
+
 ## File Structure
 
 **What goes where:**
