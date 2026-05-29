@@ -22,15 +22,15 @@
 
 ## Avance actual
 <!-- PROGRESS:START -->
-**Última actualización:** 2026-05-29 12:23
+**Última actualización:** 2026-05-29 13:42
 
-**Avance global: 18%**  `####----------------`  (40/227 h)
+**Avance global: 25%**  `#####---------------`  (56/227 h)
 
 | Fase | Avance | Tareas | Horas |
 |---|---|---|---|
 | Ramp-up Python | 100% `############` | 3/3 | 15/15 |
 | Fase 0 — Cimientos | 10% `#-----------` | 1/9 | 6/58 |
-| Fase 1 — Chatbot multicanal | 25% `###---------` | 2/6 | 13/52 |
+| Fase 1 — Chatbot multicanal | 56% `#######-----` | 4/6 | 29/52 |
 | Fase 2 — CRM + Calendario + Inventario | 21% `###---------` | 1/4 | 6/28 |
 | Fase 3 — Generación y publicación de video | 0% `------------` | 0/4 | 0/33 |
 | Fase 4 — Campañas con la base de clientes | 0% `------------` | 0/3 | 0/18 |
@@ -115,10 +115,10 @@ gantt
 
 ### Fase 1 — Chatbot multicanal
 - [x] Repasar y adaptar tools WAT (ai_reply, db_client, meta_send) (10h)
-- [ ] Llenar la base de conocimiento con datos reales del dueño (6h)
+- [x] Llenar la base de conocimiento con datos reales del dueño (6h)
 - [x] Crear cuenta de la API de Anthropic + API key + prueba en vivo del cerebro (3h)
 - [ ] Workflow n8n: Chatwoot -> n8n -> Claude -> Chatwoot (15h)
-- [ ] Captura de lead + pre-reserva + lógica de handoff en NocoDB (10h)
+- [x] Captura de lead + pre-reserva + lógica de handoff en NocoDB (10h)
 - [ ] Pruebas end-to-end y ajuste de tono (8h)
 
 ### Fase 2 — CRM + Calendario + Inventario
